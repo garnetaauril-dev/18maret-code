@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main () {
+    int bil;
+    int i;
+
+    printf("Masukkan nilai bilangan: ");
+    scanf("%d", &bil);
+
+    for (i = 2; i <= bil/2; i++){
+        if (bil % i == 0){
+            printf("%d bukan bilangan prima\n", bil);
+            break;
+        }
+        if(bil % i != 0){
+            printf("%d adalah bilangan prima\n", bil);
+            break;
+        }
+    }
+    return 0;
+}
