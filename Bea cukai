@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main () {
+    int transaksi;
+    int bea_cukai;
+
+    printf("Masukkan jumlah transaksi: ");
+    scanf("%d", &transaksi);
+
+    bea_cukai = 10000 + transaksi;
+
+    if (transaksi > 5000000) {
+        printf("Anda terkena bea cukai\n");
+        printf("Total tagihan transaksi beserta bea cukai adalah %d\n", bea_cukai);
+    } else {
+        printf("Anda tidak terkena bea cukai\n");
+        printf("Total tagihan transaksi adalah %d\n", transaksi);
+    }
+
+    return 0;
+}
