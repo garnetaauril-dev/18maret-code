@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+	int pasir;
+	int semen;
+	int batu_bata;
+	int harga_tukang;
+
+	printf("Contoh penulisan harga: 10000\n");
+	printf("masukkan harga pasir: \n");
+	scanf("%d", &pasir);
+	printf("masukkan harga semen: \n");
+	scanf("%d", &semen);
+	printf("masukkan harga batu bata: \n");
+	scanf("%d", &batu_bata);
+	printf("berapa harga tukang per m^2? ");
+	scanf("%d", &harga_tukang);
+
+	int biaya = harga_tukang + (pasir + semen + batu_bata);
+
+	printf("maka, biaya pembuatan tembok per m^2nya = %d ribu", biaya);
+
+	return 0;
+}
