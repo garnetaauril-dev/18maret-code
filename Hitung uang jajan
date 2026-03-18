@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+	float uang;
+	int hari;
+
+	printf("contoh penulisan uang : 20.000\n");
+	printf("masukkan nominal uang jajan: \n");
+	scanf("%f", &uang);
+
+	printf("untuk berapa hari?\n");
+	scanf("%d", &hari);
+
+	float jadi = uang / hari;
+
+	printf("maka, uang jajan selama %d hari = %.3f ribu.", hari, jadi);
+
+	return 0;
+}
